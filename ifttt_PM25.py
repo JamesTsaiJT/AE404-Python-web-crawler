@@ -36,7 +36,7 @@ elif PM25<35:
     air_quality = "moderate"+' PM2.5 = '+str(PM25)
 else:
     air_quality = "Unhealthy"+' PM2.5 = '+str(PM25)
-webhook_key = "b7_ILrDHhMK9hW77ZRgGkq"
+webhook_key = "b7_ILrDHhMK9hW77ZRgGk"
 trigger_name = "Lesson9"
 url ='https://maker.ifttt.com/trigger/'+trigger_name+'/with/key/'+webhook_key+'?value1={}&value2={}&value3={}'.format(date,state,air_quality)
 requests.get(url)
